@@ -4,67 +4,53 @@
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{parskip}
-\usepackage{xcolor}  % 新增的套件
+\usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{ulem}        %載入 ulem 用於底線
+\usepackage{ulem}
+\usepackage{fontawesome}
 
-% 定義自定義顏色
-\definecolor{customgreen}{RGB}{50, 168, 82}  % 用 RGB 格式定義顏色，這裡的 RGB 值代表一種綠色
+\definecolor{customgreen}{RGB}{38, 130, 63}
 
-% 自訂標題格式
 \titleformat{\section}{\large\bfseries\color{customgreen}}{}{0em}{}[\titlerule]
 \titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[:]
 
 \hypersetup{
-    colorlinks=true,       % 顯示顏色而不是外框
-    linkcolor=black,      % 內部鏈接的顏色
-    citecolor=black,      % 引用鏈接的顏色
-    urlcolor=black        % 網站鏈接的顏色
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black
 }
 
-% 家庭資料
 \def\Name{Steven Ye (Zong-Si,Ye)}
-\def\Email{steven.ye1132024@gmail.com}
 \def\Phone{(+886)909926523}
-\def\LinkedIn{https://www.linkedin.
-com/in/\%E5\%AE\%97\%E7\%BE\%B2-\%E8\%91\%89-369b7528b/}
+\def\Email{steven.ye1132024@gmail.com}
+\def\LinkedIn{https://www.linkedin.com/in/steven-ye1132024/}
 \def\GitHub{https://github.com/qaz5823091}
 
 \begin{document}
 
-\begin{center}
-    {\huge \Name} \hfill
-    \href{mailto:\Email}{\underline{\Email}} \hfill \\
-\end{center}
-
-\begin{flushright}
-    \texttt{\Phone} \\
-    \underline{\href{\GitHub}{GitHub}} \\
-    \underline{\href{\LinkedIn}{LinkedIn}}
-\end{flushright}
+{\huge \Name} \\ \\
+\textcolor{customgreen}{\faPhone} \ \texttt{\Phone} \\
+\textcolor{customgreen}{\faEnvelope} \ \href{mailto:\Email}{\underline{\Email}} \\
+\textcolor{customgreen}{\faGithub} \ \underline{\href{\GitHub}{github.com/qaz5823091}} \\
+\textcolor{customgreen}{\faLinkedin} \ \underline{\href{\LinkedIn}{linkedin.com/in/steven-ye1132024}}
 
 \section*{Professional Summary}
-I'm a Mobile Engineer specializing in Android and iOS app development using Flutter, with a solid foundation in native Android development. I completed an Android internship at a technology company and have experience as a high school IT course speaker, as well as a teaching assistant in college.
-
-Beyond mobile development, I'm passionate about becoming a well-rounded Software Engineer. I'm eager to explore backend, frontend, and other areas of software engineering and also interested in how software can be applied in different professional fields. I enjoy learning new skills, sharing knowledge, and turning ideas into real, published projects.
-
-Feel free to contact me via email if you're looking for a motivated and versatile software engineer.
-
-
+Mobile Engineer with hands-on experience in cross-platform app development using Flutter and native Android. Strong interest in full-stack development and DevOps. Known for self-learning, knowledge sharing, and delivering polished apps from idea to deployment.
 \section*{Experience}
-\textbf{Mobile Engineer} \hfill August 2024 -- June 2025 \\
-MicroProgram, Taichung , Taiwan
+
+\textbf{Mobile Engineer (Flutter) -- MicroProgram}  \hfill Aug. 2024 -- Jun. 2025 \\
+Taichung, Taiwan
 \begin{itemize}[left=0pt, label={--}]
-    \item Developed apps using Flutter
+    \item Developed features for smart bicycle-related projects
     \item Developed and maintained a carbon footprint tracking app project
     \item Maintained the IVM project, which uses Bluetooth to control factory equipment
-    \item Developed features for smart bicycle-related projects
     \item Improved team development processes for better efficiency and collaboration
     \item Collaborated with the QA team to research and implement mobile app test automation
 \end{itemize}
 
-\textbf{Android Internship} \hfill September 2023 - June 2024 \\
-Kdan, Tainan , Taiwan
+\textbf{Android Internship -- Kdan} \hfill Sep. 2023 -- Jun. 2024 \\
+Tainan, Taiwan
 \begin{itemize}[left=0pt, label={--}]
     \item Assisted the team in developing products such as a PDF Reader
     \item Maintained and optimized CI/CD pipelines
@@ -72,63 +58,24 @@ Kdan, Tainan , Taiwan
 \end{itemize}
 
 \section*{Education}
-\textbf{National ChiaYi University} \hfill September2020 - June 2024 \\
-Bachelor of Science in Computer Science
+\textbf{National Chiayi University} \hfill Sep. 2020 -- Jun. 2024 \\
+Bachelor of Science in Computer Science \\
 
-\begin{itemize}[left=0pt, label={--}]
-    \item Relevant coursework: Data Structures, Algorithms, Computer Networking, Blockchain, Software Engineering, Linux System Administration
-    \item Capstone project: Developed a web-based learning platform using SDN (Software-Defined Networking) technology
-    \item Served as president of the student association in the department
-\end{itemize}
+GPA: 3.58 / 4.0
 
 \section*{Skills}
-\textbf{Programming Languages}
-\begin{itemize}[left=0pt, label={--}]
-    \item Dart, Kotlin, JavaScript, Python, Bash, C/C++
-\end{itemize}
 
-\textbf{Mobile Development}
-\begin{itemize}[left=0pt, label={--}]
-    \item Cross-platform app development using Flutter for Android and iOS
-    \item Familiar with state management libraries: Riverpod, Provider, BLoC
-    \item Experience with MVVM architecture and clean code principles
-    \item Proficient in app packaging and publishing (APK, AAB, IPA)
-    \item Experienced in deploying apps to Google Play Console, App Store, and TestFlight
-    \item Native Android development with Kotlin/Java and Jetpack Compose
-    \item Knowledge of persistent storage (SharedPreferences, Room), JSON parsing (Gson), and Firebase services (Remote Config, Analytics,Cloud Messaging,App Distribution)
-    \item Familiar with dependency injection (Koin) and RESTful API integration (Retrofit)
-\end{itemize}
+\subsection*{Programming}
+Dart, Kotlin, JavaScript, Python, C/C++, PHP
 
-\textbf{Team Collaboration \& Workflow}
-\begin{itemize}[left=0pt, label={--}]
-    \item Proficient in Git and GitLab for version control, issue tracking, and merge requests
-    \item Comfortable working with UI/UX design specifications
-    \item Skilled in using Postman for API testing and documentation
-    \item Able to follow team workflows and write technical documentation (UML, user guides)
-    \item Strong at reading official documentation and working independently
-\end{itemize}
+\subsection*{Mobile Development}
+Flutter - Riverpod / Provider / BLoC, Jetpack Compose, MVVM / Clean Architecture, Firebase, REST APIs, App Publishing (Play Store / App Store)
 
-\textbf{DevOps \& Maintenance}
-\begin{itemize}[left=0pt, label={--}]
-    \item Experience with GitLab CI/CD, including pipeline configuration, runners, and .yml setup
-    \item Familiar with Android CI/CD pipelines and GitHub Actions
-    \item Understanding of DevOps concepts
-\end{itemize}
+\subsection*{Collaboration}
+Git, GitLab, Postman, UML, UI/UX spec implementation, read / write Technical Docs
 
-\textbf{Linux \& Containerization}
-\begin{itemize}[left=0pt, label={--}]
-    \item Comfortable with terminal-based system operations
-    \item Hands-on experience with Ubuntu, Mint, Manjaro, Arch Linux KDE
-    \item Familiar with web server setup, SSH access, and cloud service deployment
-    \item Skilled in writing Dockerfiles and creating Docker images
-    \item Basic knowledge of Docker Compose for managing multi-container setups
-\end{itemize}
-
-\textbf{Server Management} 
-\begin{itemize}[left=0pt, label={--}]
-    \item Experience setting up personal websites on Raspberry Pi using SSH
-    \item Experience maintaining school-hosted web systems via RDP
-\end{itemize}
+\subsection*{DevOps \& CI/CD}
+GitLab CI/CD, GitHub Actions, Docker / Docker Compose, Linux (Arch/Ubuntu)
 
 \section*{Languages}
 \begin{itemize}[left=0pt, label={--}]
